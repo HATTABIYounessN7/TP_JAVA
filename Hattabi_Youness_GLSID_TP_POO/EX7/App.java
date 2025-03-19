@@ -1,12 +1,19 @@
 public class App {
     public static void main(String[] args) {
-        Command command = new Command();
-        command.setAmount(1000);
-        command.setPaymentMethod(new CreditCard("5555555555", command.getAmount(), "13826822"));
-        command.pay();
+        User user = new User("John");
+        Book book = new Book("The Lord of the Rings", "J.R.R. Tolkien");
+        DVD dvd = new DVD("Inception", "Christopher Nolan");
 
-        command.setAmount(2000);
-        command.setPaymentMethod(new PayPal("test@test.com", command.getAmount(), "62636353"));
-        command.pay();
+        user.lendObject(book);
+        user.lendObject(dvd);
+
+        System.out.println("Book lent: " + book.getIsLent());
+        System.out.println("DVD lent: " + dvd.getIsLent());
+
+        book.returnItem();
+        dvd.returnItem();
+
+        System.out.println("Book lent: " + book.getIsLent());
+        System.out.println("DVD lent: " + dvd.getIsLent());
     }
 }

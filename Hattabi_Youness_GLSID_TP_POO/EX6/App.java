@@ -1,19 +1,13 @@
 public class App {
     public static void main(String[] args) {
-        User user = new User("John");
-        Book book = new Book("The Lord of the Rings", "J.R.R. Tolkien");
-        DVD dvd = new DVD("Inception", "Christopher Nolan");
+        Figure[] figures = new Figure[4];
+        figures[0] = new Circle("Cercle", 5);
+        figures[1] = new Rectangle("Rectangle", 5, 10);
+        figures[2] = new Circle("Cercle", 10);
+        figures[3] = new Rectangle("Rectangle", 10, 20);
 
-        user.lendObject(book);
-        user.lendObject(dvd);
-
-        System.out.println("Book lent: " + book.getIsLent());
-        System.out.println("DVD lent: " + dvd.getIsLent());
-
-        book.returnItem();
-        dvd.returnItem();
-
-        System.out.println("Book lent: " + book.getIsLent());
-        System.out.println("DVD lent: " + dvd.getIsLent());
+        for (Figure figure : figures) {
+            System.out.println(figure);
+        }
     }
 }

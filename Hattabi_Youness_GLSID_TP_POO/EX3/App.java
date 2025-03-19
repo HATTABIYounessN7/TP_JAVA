@@ -1,22 +1,14 @@
+import java.util.Date;
+
 public class App {
     public static void main(String[] args) {
-        Plane plane = new Plane("Boeing", 1000, "Boeing 747", 1000000);
-        plane.display();
-        System.out.println(plane.getCompany());
-        System.out.println(plane.getMaxSpeed());
-        plane.makeSound();
+        Adherent adherent = new Adherent(2, "Adherent", "Adherent", "adherent@test.com", "2125126812",
+                new Date(System.currentTimeMillis()));
 
-        Car car = new Car("Toyota", 200.00, "Toyota Corolla", "2000");
-        car.display();
-        System.out.println(car.getModel());
-        System.out.println(car.getYear());
-        car.makeSound();
+        Book book = new Book(5, "The Book", new Author(
+                7, "Author", "The", "Author@test.com", "2842671265", new Date(System.currentTimeMillis())));
 
-        Bike bike = new Bike("Bike", 100.00, "Mountain Bike", 250);
-        bike.display();
-        System.out.println(bike.getBrand());
-        System.out.println(bike.getPower());
-        bike.makeSound();
-
+        System.out.println(adherent);
+        System.out.println(book);
     }
 }

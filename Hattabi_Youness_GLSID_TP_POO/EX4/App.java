@@ -1,12 +1,22 @@
 public class App {
     public static void main(String[] args) {
-        Engineer engineer = new Engineer("engineer", "engineer", "engineer@test.com", "5225128246", 10000);
-        Manager manager = new Manager("manager", "manager", "manager@test.com", "5225128246", 10000);
+        Plane plane = new Plane("Boeing", 1000, "Boeing 747", 1000000);
+        plane.display();
+        System.out.println(plane.getCompany());
+        System.out.println(plane.getMaxSpeed());
+        plane.makeSound();
 
-        System.out.println(engineer.calculateSalary());
-        System.out.println(manager.calculateSalary());
+        Car car = new Car("Toyota", 200.00, "Toyota Corolla", "2000");
+        car.display();
+        System.out.println(car.getModel());
+        System.out.println(car.getYear());
+        car.makeSound();
 
-        System.out.println(engineer);
-        System.out.println(manager);
+        Bike bike = new Bike("Bike", 100.00, "Mountain Bike", 250);
+        bike.display();
+        System.out.println(bike.getBrand());
+        System.out.println(bike.getPower());
+        bike.makeSound();
+
     }
 }
