@@ -9,26 +9,71 @@ public class Compte {
         nbCompte++;
     }
 
+    /**
+     * This Java function returns the value of the "solde" attribute.
+     * 
+     * @return The method `getSolde` is returning the value of the `solde`
+     *         attribute.
+     */
     public double getSolde() {
         return this.solde;
     }
 
+    /**
+     * The function sets the value of the "solde" variable in a Java class.
+     * 
+     * @param solde The parameter `solde` in the `setSolde` method is a double type
+     *              representing the
+     *              new value to set for the `solde` attribute of the class.
+     */
     public void setSolde(double solde) {
         this.solde = solde;
     }
 
+    /**
+     * The function `getNumero()` in Java returns the value of the `numero`
+     * attribute.
+     * 
+     * @return The method `getNumero` is returning the value of the instance
+     *         variable `numero`.
+     */
     public String getNumero() {
         return this.numero;
     }
 
+    /**
+     * The function setNumero(String numero) sets the value of the instance variable
+     * "numero" in a Java
+     * class.
+     * 
+     * @param numero The parameter "numero" is a String type that represents a
+     *               number.
+     */
     public void setNumero(String numero) {
         this.numero = numero;
     }
 
+    /**
+     * The `deposit` function in Java adds the specified amount to the current
+     * balance of an account.
+     * 
+     * @param amount The `amount` parameter in the `deposit` method represents the
+     *               sum of money that is
+     *               being deposited into an account.
+     */
     public void deposit(double amount) {
         this.setSolde(amount + this.getSolde());
     }
 
+    /**
+     * The `withdraw` function in Java checks if the amount to be withdrawn is
+     * greater than the current
+     * balance and updates the balance accordingly.
+     * 
+     * @param amount The `amount` parameter in the `withdraw` method represents the
+     *               amount of money
+     *               that is being withdrawn from an account.
+     */
     public void withdraw(double amount) {
         if (amount > this.getSolde()) {
             System.out.println("Solde insuffisant");
@@ -37,10 +82,17 @@ public class Compte {
         }
     }
 
+    /**
+     * The `display` function in Java prints the account number and balance of an
+     * object.
+     */
     public void display() {
         System.out.println("Numero: " + this.getNumero() + " Solde: " + this.getSolde());
     }
 
+    /**
+     * The function `displayNbComptes` prints the number of accounts.
+     */
     public static void displayNbComptes() {
         System.out.println("Nombre de comptes: " + nbCompte);
     }
