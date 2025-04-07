@@ -1,4 +1,10 @@
 public class TestMachine {
+    /**
+     * The main function sets the maximum number of products, creates two machine
+     * instances, produces
+     * products using the machines, and then prints the total number of products
+     * produced.
+     */
     public static void main(String[] args) {
         MachineProduction.setmaxPrdoucts(100);
 

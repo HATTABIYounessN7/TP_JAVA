@@ -3,6 +3,12 @@ public class Compte {
     private String numero;
     private static int nbCompte = 0;
 
+    // The `public Compte()` constructor in the Java class `Compte` is initializing a new instance of
+    // the `Compte` class. Within this constructor:
+    // - The `solde` attribute is set to 0, indicating an initial balance of 0 for the account.
+    // - The `numero` attribute is set to an empty string, representing the account number.
+    // - The `nbCompte` static variable is incremented by 1, which keeps track of the total number of
+    // `Compte` objects created.
     public Compte() {
         this.solde = 0;
         this.numero = "";
