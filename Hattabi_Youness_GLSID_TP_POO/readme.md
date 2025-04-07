@@ -138,3 +138,43 @@
     Plane, Car, and Bike classes,
     calls their methods, and prints out their properties.
 </p>
+<h3>Exercice 5: </h3>
+<p>class Employee</p>
+<p>
+    Employee(): Constructs a new Employee object with default values.
+</p>
+<p>
+    Employee(String name, String surname, String email, String phone, double salary):        
+    Constructs a new Employee object with the provided details.
+    parameters: name-The first name of the employee.surname-The last name of the employee. email-The email address of the employee.phone-The phone number of the employee. salary-The salary of the employee.
+</p>
+<p>
+    public abstract double calculateSalary(); : 
+        Calculates the salary of the employee based on their specific role and responsibilities.
+        This method is abstract and must be implemented by each subclass of Employee.
+        returns The calculated salary of the employee.
+</p>
+<p>class Ingénieur</p>
+<p>
+    public double calculateSalary():    Calculates the engineer's salary after applying a 15% bonus.
+                                        returns the engineer's salary after the bonus has been added.
+</p>
+<p>class Manager</p>
+<p>
+    public double calculateSalary():    Calculates the salary of a manager, which includes a 20% bonus on the base  
+                                        salary.
+                                        returns the total salary of the manager, which is the base salary plus the bonus.
+</p>
+<p>class App</p>
+<p> 
+    The main method serves as the entry point for the application.
+    It demonstrates the creation of `Engineer` and `Manager` objects,
+    calculates their salaries, and prints their details to the console.
+    Steps performed:
+    1. Creates an `Engineer` object with predefined attributes.
+    2. Creates a `Manager` object with predefined attributes.
+    3. Calculates and prints the salary of the `Engineer`.
+    4. Calculates and prints the salary of the `Manager`.
+    5. Prints the string representation of the `Engineer`.
+    6. Prints the string representation of the `Manager`.
+</p>
