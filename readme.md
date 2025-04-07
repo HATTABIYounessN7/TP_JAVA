@@ -29,7 +29,8 @@
 </p>
 <p>
     display():  The `display` function in Java prints the account number and balance of an object.
-
+</p>
+<p>
     displayNbComptes(): The function `displayNbComptes` prints the number of accounts.
 
 </p>
