@@ -43,7 +43,7 @@
 
 </p>
 
-<h3>Exercice 2: <h3>
+<h3>Exercice 2: </h3>
 
 <p>class MachineProduction</p>
 
@@ -102,3 +102,39 @@
 </p>
 <p>classe App</p>
 <p>The main function creates an instance of an Adherent and a Book, then prints them out.</p>
+
+<h3>Exercice 4: </h3>
+<p>class Vehicule</p>
+<p>
+    makeSound():    This method makes a sound, which is currently defined as printing "make sound" to the console.
+                    This method is intended to be overridden in subclasses to provide more specific sound behavior.
+                    This method does not return any value.
+</p>
+<p>
+    display():  This method displays the name and price of the vehicle.
+                This method does not return any value. It prints the name and price of the vehicle to the console.
+</p>
+
+<p>class Car</p>
+<p>
+    makeSound():    Overrides the makeSound method from the Vehicule class to provide a specific sound for a car.
+                    This method prints "car says something" to the console when called.
+                    This method does not return any value.
+</p>
+<p>class Bike</p>
+<p>
+    makeSound():    Overrides the makeSound method from the Vehicule class to provide a specific sound for a bike.
+                    This method prints "bike says something" to the console.    
+</p>      
+<p>class Plane</p>
+<p>
+    makeSound():    Overrides the makeSound method from the Vehicule class to provide a specific sound for a Plane
+                    object.
+                    This method does not return any value.
+</p>
+<p>classe App</p>
+<p>    
+    This is the main entry point of the application. It creates instances of the
+    Plane, Car, and Bike classes,
+    calls their methods, and prints out their properties.
+</p>
