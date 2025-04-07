@@ -6,6 +6,12 @@ public class Command {
         this(.0, null);
     }
 
+    /**
+     * Constructs a new Command object with the specified amount and payment method.
+     *
+     * @param amount        The total amount of the command.
+     * @param paymentMethod The payment method used for this command.
+     */
     public Command(double amount, Payment paymentMethod) {
         this.amount = amount;
         this.paymentMethod = paymentMethod;
@@ -27,6 +33,11 @@ public class Command {
         this.paymentMethod = paymentMethod;
     }
 
+    /**
+     * Processes the payment for this command using the specified payment method.
+     *
+     * @see Payment#processPayment()
+     */
     public void pay() {
         this.paymentMethod.processPayment();
     }
