@@ -1,5 +1,7 @@
 <h1>TP POO</h1>
 <h2>Exercice 1: </h2>
+
+<h3>class Compte : </h3>
 <p>
     Compte():   The `public Compte()` constructor in the Java class `Compte` is initializing a new instance of
                 the `Compte` class. Within this constructor:
