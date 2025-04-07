@@ -210,3 +210,51 @@
     Expected Output:
     The details of each `Figure` object in the array, printed to the console.
 </p>
+<h3>Exercice 7: </h3>
+<p>interface Lendable : </p>
+<p>
+    The Lendable interface represents an item that can be lent and returned.
+    Classes implementing this interface should provide specific implementations
+    for lending and returning the item.
+</p>
+<p>class Book & DVD : </p>
+<p>
+    Book(String title, String author):  Constructs a new Book with the specified title and author.
+                                        parameters: title-the title of the book. author-the author of the book.
+</p>
+<p>
+    DVD(String title, String director): Constructs a new DVD with the specified title and director.
+                                        parameters: title-the title of the DVD. director-the director of the DVD.
+<p>
+    getIsLent() & setIsLent(Boolean isLent):    getters and setters for the status of the book or the DVD. True if  
+                                                they are currently lent, false otherwise.
+</p>
+<p>
+    lend(): Lends the Lendable.
+            This method updates the lending status of the Lendable to true and prints a
+            message indicating that the Lendable has been lent.
+</p>
+<p>
+    returnItem():   Returns the Lendable to the library.
+                    This method updates the lending status of the Lendable to false and prints a
+                    message indicating that the Lendable has been returned.
+</p>
+<p>class User : </p>
+<p>
+    lendObject(Lendable lendable):  Allows a user to lend an object that implements the Lendable interface.
+                                    parameters lendable The object to be lent. This object must implement the
+                                    Lendable interface.
+</p>
+<p>class App : </p>
+<p>  
+    The main method demonstrates the functionality of lending and returning items
+    (such as books and DVDs) by a user. It performs the following steps:
+    1. Creates a User object with the name "John".
+    2. Creates a Book object with the title "The Lord of the Rings" and author "J.R.R. Tolkien".
+    3. Creates a DVD object with the title "Inception" and director "Christopher Nolan".
+    4. Lends the book and DVD to the user using the `lendObject` method.
+    5. Prints the lending status of the book and DVD.
+    6. Returns the book and DVD using the `returnItem` method.
+    7. Prints the updated lending status of the book and DVD after they are returned.
+    This method serves as a test to verify the lending and returning functionality of the User, Book, and DVD classes.
+</p>

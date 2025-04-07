@@ -7,6 +7,12 @@ public class DVD implements Lendable {
         this("", "");
     }
 
+    /**
+     * Constructs a new DVD object with the specified title and director.
+     *
+     * @param title    the title of the DVD
+     * @param director the director of the DVD
+     */
     public DVD(String title, String director) {
         this.title = title;
         this.director = director;
