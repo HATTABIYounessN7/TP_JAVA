@@ -45,7 +45,7 @@
 
 <h3>Exercice 2: </h3>
 
-<p>class MachineProduction</p>
+<p>class MachineProduction : </p>
 
 <p>
     MachineProduction():    The `public MachineProduction()` constructor in the `MachineProduction` class is
@@ -71,14 +71,14 @@
 </p>
 
 <h3>Exercice 3: </h3>
-<p>classe Person</p>
+<p>classe Person : </p>
 <p>
     toString(): The `toString` method overrides the default implementation to return a formatted string
                 representation of an object's attributes. 
                 This `toString()` method is returning a formatted string representation of an object's
                 attributes, including name, surname, email, telephone number, and birth date.
 </p> 
-<p>classe Adherent</p>
+<p>classe Adherent : </p>
 <p>
     toString(): The `toString` method is overridden to return a formatted string representation of an `Adherent`
                 object including its attributes.
@@ -86,25 +86,25 @@
                 of the `Adherent` class. The returned string includes the values of the `numAdherent`, `name`,
                 `surname`, `email`, `tel`, and `birthDate` properties of the object.
 </p>
-<p>classe Author</p>
+<p>classe Author : </p>
 <p>
     toString(): The `toString` method in Java returns a string representation of an object's attributes. 
                 The `toString` method is being overridden to return a string representation of an object
                 of the class `Adherent`. The returned string includes the values of the `numAuthor`, `name`,
                 `surname`, `email`, `tel`, and `birthDate` attributes of the `Adherent` object.
 </p>
-<p>classe Book</p>
+<p>classe Book : </p>
 <p>
     toString(): The `toString` method overrides the default implementation to return a string representation of a
                 Book object including its ISBN, title, and author. 
                 A string representation of a Book object is being returned. The string includes the ISBN,
                 title, and author of the book.
 </p>
-<p>classe App</p>
+<p>classe App : </p>
 <p>The main function creates an instance of an Adherent and a Book, then prints them out.</p>
 
 <h3>Exercice 4: </h3>
-<p>class Vehicule</p>
+<p>class Vehicule : </p>
 <p>
     makeSound():    This method makes a sound, which is currently defined as printing "make sound" to the console.
                     This method is intended to be overridden in subclasses to provide more specific sound behavior.
@@ -115,31 +115,31 @@
                 This method does not return any value. It prints the name and price of the vehicle to the console.
 </p>
 
-<p>class Car</p>
+<p>class Car : </p>
 <p>
     makeSound():    Overrides the makeSound method from the Vehicule class to provide a specific sound for a car.
                     This method prints "car says something" to the console when called.
                     This method does not return any value.
 </p>
-<p>class Bike</p>
+<p>class Bike : </p>
 <p>
     makeSound():    Overrides the makeSound method from the Vehicule class to provide a specific sound for a bike.
                     This method prints "bike says something" to the console.    
 </p>      
-<p>class Plane</p>
+<p>class Plane : </p>
 <p>
     makeSound():    Overrides the makeSound method from the Vehicule class to provide a specific sound for a Plane
                     object.
                     This method does not return any value.
 </p>
-<p>classe App</p>
+<p>classe App : </p>
 <p>    
     This is the main entry point of the application. It creates instances of the
     Plane, Car, and Bike classes,
     calls their methods, and prints out their properties.
 </p>
 <h3>Exercice 5: </h3>
-<p>class Employee</p>
+<p>class Employee : </p>
 <p>
     Employee(): Constructs a new Employee object with default values.
 </p>
@@ -154,18 +154,18 @@
         This method is abstract and must be implemented by each subclass of Employee.
         returns The calculated salary of the employee.
 </p>
-<p>class Ingénieur</p>
+<p>class Ingénieur : </p>
 <p>
     public double calculateSalary():    Calculates the engineer's salary after applying a 15% bonus.
                                         returns the engineer's salary after the bonus has been added.
 </p>
-<p>class Manager</p>
+<p>class Manager : </p>
 <p>
     public double calculateSalary():    Calculates the salary of a manager, which includes a 20% bonus on the base  
                                         salary.
                                         returns the total salary of the manager, which is the base salary plus the bonus.
 </p>
-<p>class App</p>
+<p>class App : </p>
 <p> 
     The main method serves as the entry point for the application.
     It demonstrates the creation of `Engineer` and `Manager` objects,
@@ -177,4 +177,36 @@
     4. Calculates and prints the salary of the `Manager`.
     5. Prints the string representation of the `Engineer`.
     6. Prints the string representation of the `Manager`.
+</p>
+<h3>Exercice 6: </h3>
+<p>class Figure : </p>
+<p>surface():  Calculates and returns the surface area of the figure.</p>
+<p>perimeter(): Calculates and returns the perimeter of the figure. </p>
+<p>class Circle : </p>
+<p> Circle(String nom, double radius):  Constructs a Circle object with the specified name and radius.
+                                        parameters nom-The name of the circle, radius-The radius of the circle.
+</p> 
+<p>surface(): Calculates the surface area of the circle and returns it.</p>
+<p>perimeter(): Calculates the perimeter of the circle and returns it.</p>
+
+<p>class Rectangle : </p>
+<p> Rectangle(String nom, double width, double height):     Constructs a Rectangle object with the specified name
+                                                            width, and height.
+                                                            parameters nom-The name of the rectangle.width-The width of the rectangle.height-The height of the rectangle.
+</p> 
+<p>surface(): Calculates the surface area of the Rectangle and returns it.</p>
+<p>perimeter(): Calculates the perimeter of the Rectangle and returns it.</p>
+<p>class App : </p>
+<p>
+    The main method serves as the entry point for the application.
+    It demonstrates the creation and usage of an array of `Figure` objects,
+    which includes instances of `Circle` and `Rectangle`. 
+    Steps performed:
+    1. Initializes an array of `Figure` objects with a size of 4.
+    2. Populates the array with two `Circle` objects and two `Rectangle` objects,
+        each initialized with specific names and dimensions.
+    3. Iterates through the array and prints the details of each `Figure` object
+        using their overridden `toString` method. 
+    Expected Output:
+    The details of each `Figure` object in the array, printed to the console.
 </p>
