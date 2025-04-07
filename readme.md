@@ -45,7 +45,7 @@
 
 <h3>Exercice 2: <h3>
 
-<h4>class MachineProduction<h4>
+<p>class MachineProduction</p>
 
 <p>
     MachineProduction():    The `public MachineProduction()` constructor in the `MachineProduction` class is
@@ -71,7 +71,34 @@
 </p>
 
 <h3>Exercice 3: </h3>
-<h4>classe Person</h4>
-<h4>classe Adherent</h4>
-<h4>classe Author</h4>
-<h4>classe Book</h4>
+<p>classe Person</p>
+<p>
+    toString(): The `toString` method overrides the default implementation to return a formatted string
+                representation of an object's attributes. 
+                This `toString()` method is returning a formatted string representation of an object's
+                attributes, including name, surname, email, telephone number, and birth date.
+</p> 
+<p>classe Adherent</p>
+<p>
+    toString(): The `toString` method is overridden to return a formatted string representation of an `Adherent`
+                object including its attributes.
+                The `toString()` method is being overridden to return a string representation of an object
+                of the `Adherent` class. The returned string includes the values of the `numAdherent`, `name`,
+                `surname`, `email`, `tel`, and `birthDate` properties of the object.
+</p>
+<p>classe Author</p>
+<p>
+    toString(): The `toString` method in Java returns a string representation of an object's attributes. 
+                The `toString` method is being overridden to return a string representation of an object
+                of the class `Adherent`. The returned string includes the values of the `numAuthor`, `name`,
+                `surname`, `email`, `tel`, and `birthDate` attributes of the `Adherent` object.
+</p>
+<p>classe Book</p>
+<p>
+    toString(): The `toString` method overrides the default implementation to return a string representation of a
+                Book object including its ISBN, title, and author. 
+                A string representation of a Book object is being returned. The string includes the ISBN,
+                title, and author of the book.
+</p>
+<p>classe App</p>
+<p>The main function creates an instance of an Adherent and a Book, then prints them out.</p>
