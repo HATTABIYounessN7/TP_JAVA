@@ -19,7 +19,6 @@ public class CompteEpargne extends CompteBancaire {
         this.depot(interet);
     }
 
-    @Override
     public void affichage() {
         super.affichage();
         System.out.println("Taux d'intérêt: " + this.getTauxInteret());

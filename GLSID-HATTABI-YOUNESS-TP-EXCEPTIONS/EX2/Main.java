@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList<CompteBancaire> comptes = new ArrayList<>();
 
         try {
-            CompteCourant compte1 = new CompteCourant("CC001", 1000, "Jean Dupont", 500);
-            CompteEpargne compte2 = new CompteEpargne("CE001", 5000, "Marie Martin", 2.5);
-            CompteCourant compte3 = new CompteCourant("CC002", 300, "Pierre Durand", 200);
+            CompteCourant compte1 = new CompteCourant(1, 1000, "Jean Dupont", 500);
+            CompteEpargne compte2 = new CompteEpargne(2, 5000, "Marie Martin", 2.5);
+            CompteCourant compte3 = new CompteCourant(3, 300, "Pierre Durand", 200);
 
             comptes.add(compte1);
             comptes.add(compte2);
@@ -58,7 +60,7 @@ public class Main {
 
             try {
                 System.out.println("=== Test de transfert avec succès ===");
-                CompteBancaire.transfer(compte2, compte3, 1000);
+                compte2.transfer(compte3, 1000);
                 compte2.affichage();
                 compte3.affichage();
                 System.out.println();
@@ -72,7 +74,7 @@ public class Main {
 
             try {
                 System.out.println("=== Test de transfert avec compte inexistant ===");
-                CompteBancaire.transfer(compte2, null, 500);
+                compte2.transfer(null, 500);
             } catch (FondsInsuffisantsException e) {
                 System.out.println("Erreur: " + e.getMessage());
                 System.out.println();

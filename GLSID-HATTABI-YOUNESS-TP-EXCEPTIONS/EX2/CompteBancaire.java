@@ -33,11 +33,11 @@ public class CompteBancaire {
         this.nomTitulaire = nomTitulaire;
     }
 
-    public void depot(int val) {
+    public void depot(double val) {
         this.setSolde(this.getSolde() + val);
     }
 
-    public void retirer(int val) throws FondsInsuffisantsException {
+    public void retirer(double val) throws FondsInsuffisantsException {
         if (this.getSolde() - val < 0) {
             throw new FondsInsuffisantsException("Insufficient Funds.");
         }
@@ -49,7 +49,7 @@ public class CompteBancaire {
         System.out.println("Solde: " + this.getSolde());
     }
 
-    public boolean transfer(CompteBancaire compte, int val)
+    public boolean transfer(CompteBancaire compte, double val)
             throws FondsInsuffisantsException, CompteInexistantException {
         if (compte == null) {
             throw new CompteInexistantException("Account does not exist.");

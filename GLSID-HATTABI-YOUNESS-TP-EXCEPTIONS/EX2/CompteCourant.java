@@ -14,7 +14,6 @@ public class CompteCourant extends CompteBancaire {
         this.decouvertAutorise = decouvertAutorise;
     }
 
-    @Override
     public void retirer(int val) throws FondsInsuffisantsException {
         if (val > this.getSolde() - this.getDecouvertAutorise()) {
             throw new FondsInsuffisantsException("Insufficient Funds.");
