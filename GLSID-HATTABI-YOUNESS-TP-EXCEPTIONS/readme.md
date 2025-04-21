@@ -86,9 +86,9 @@ Fonctionnalités implémentées :
 - Accesseur en écriture (`setVal()`) avec vérification
 - Méthode de décrémentation avec contrôle
 
-#### Classe de test TestEntierNaturel
+#### Méthode de test
 
-Une classe de test a également été implémentée pour vérifier le bon fonctionnement des classes précédentes.
+Une méthode de test a également été implémentée pour vérifier le bon fonctionnement des classes précédentes.
 
 ```java
     public static void main(String[] args) {
