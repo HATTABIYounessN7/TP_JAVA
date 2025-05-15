@@ -20,7 +20,7 @@ Créer une application simple pour manipuler une liste de produits en utilisant 
 
 #### Classe Produit
 
-````java
+```java
 public class Product {
     private long id;
     private String name;
@@ -63,10 +63,11 @@ public class Product {
     public String toString() {
         return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
     }
-
-}```
+}
+```
 
 #### Classe GestionProduitsApp
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -99,7 +100,7 @@ public class ProductManagementApp {
         }
     }
 }
-````
+```
 
 ### Fonctionnalités implémentées
 
