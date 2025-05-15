@@ -29,12 +29,13 @@ public class AnimalerieUtil {
      * @return true if the dog was successfully added.
      */
     public boolean ajouterChien(List<? super Chien> liste) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the name of the dog: ");
-        String nom = scanner.nextLine();
-        Chien chien = new Chien(nom);
-        liste.add(chien);
-        return true;
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter the name of the dog: ");
+            String nom = scanner.nextLine();
+            Chien chien = new Chien(nom);
+            liste.add(chien);
+            return true;
+        }
     }
 
     /**
